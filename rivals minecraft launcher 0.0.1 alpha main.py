@@ -1,0 +1,67 @@
+from tkinter import *
+import tkinter.ttk
+root=Tk()
+root.title("Rivals Minecraft Launcher 0.0.1 alpha")
+root.geometry("840x480")
+start=Button(root,
+            text="开始游戏",
+            bd=True,
+            width=12,
+            font=("SimHei",26),
+            height=2,
+            bg="skyblue",
+            fg="white",
+            relief=FLAT,
+            #command=start_game
+             )
+left_bg=Label(root,
+              bg="lightgray",
+              width=210,
+              height=480,
+              )
+left_account_label=Label(root,
+                         bg="white",
+                         width=140,
+                         height=30
+                         )
+left_account_text=Label(root,
+                        text="用户名",
+                        font=('SimHei',8),
+                        fg='black',
+                        bg='lightgray'
+                        )
+left_version_text=Label(root,
+                        text='游戏版本',
+                        font=('SimHei',8),
+                        fg='black',
+                        bg='lightgray'
+                        )
+left_version_label=Label(root,
+                         bg="white",
+                         width=140,
+                         height=30
+                         )
+upper_bg=Label(root,
+               bg="lightgreen",
+               bd=True,
+               width=840,
+               height=105,
+               font=("SimHei",21),
+               fg="white",
+               text="Rivals Minecraft Launcher 0.0.1 alpha"
+               )
+input_account=Entry(root)
+var=StringVar()
+input_version=tkinter.ttk.Combobox(root,textvariable=var,values=['1.20.1','1.16.5'])
+start.pack()
+start.place(relx=0.72,rely=0.8,relheight=0.16,relwidth=0.21)
+left_bg.place(relx=0,rely=0,relheight=1,relwidth=0.3)
+upper_bg.place(relx=0,rely=0,relheight=0.125,relwidth=1)
+#left_account_label.place(relx=0.07,rely=3/16,relheight=1/16,relwidth=0.22)
+input_account.place(relx=0.07,rely=3/16,relheight=1/16,relwidth=0.22)
+#left_version_label.place(relx=0.07,rely=5/16,relheight=1/16,relwidth=0.22)
+input_version.place(relx=0.07,rely=5/16,relheight=1/16,relwidth=0.22)
+left_account_text.place(relx=0.02,rely=3/16,relheight=1/16,relwidth=0.04)
+left_version_text.place(relx=0.008,rely=5/16,relheight=1/16,relwidth=0.06)
+
+root.mainloop()
