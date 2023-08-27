@@ -6,4 +6,4 @@ RMCL is a free and modern Minecraft Launcher,trying to make a better environment
 Not yet implemented
 # Platform
 Windows 7 and above,Linux
-Use x86 CPU,others may lead to errors. 
+Please Use x86 framework CPU,others may lead to errors. 
